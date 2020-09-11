@@ -1,0 +1,38 @@
+
+html, body {
+    height: 100%;
+}
+
+.sales-orders-container {
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-style: italic;
+    }
+
+    form {
+        width: fit-content;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 75px;
+
+        button {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .products-table-container {
+        margin: 0 auto;
+        text-align: center;
+
+        table {
+            margin: 0 auto;
+            width: fit-content;
+        }
+    }
+}

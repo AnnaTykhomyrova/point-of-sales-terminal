@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Simple Point Of Sales terminal
 
-## Available Scripts
+## Description 
 
-In the project directory, you can run:
+The Terminal is used by cashiers to enter sales orders and check order total. 
+Cashiers might be using Mobile / Tablet / Desktop.
 
-### `npm start`
+Functionality:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ - Sales orders entry.
+    Within - Cashier puts “product name”, “price”, “qty”. It shows all entered lines and calculates totals.
+ - Credit check.
+    Maximum order amount checking. Cashier puts the maximum amount (credit limit). If the currently entered order total less than the credit limit, the “indicator box” is green, otherwise - the “indicator box” is red.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Final product
 
-### `npm test`
+#### Point of Sales Terminal.
+!["Screenshot of pos terminal main."](https://github.com/AnnaTykhomyrova/point-of-sales-terminal/blob/master/docs/pos-terminal-main.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Point of Sales Terminal. Simple validation.
+!["Screenshot of pos terminal with simple validation."](https://github.com/AnnaTykhomyrova/point-of-sales-terminal/blob/master/docs/pos-terminal-with-simple-validation.png)
 
-### `npm run build`
+#### Point of Sales Terminal. Green and red indicator if total price is more than credit limit.
+!["Screenshot of pos terminal with over and below credit limit."](https://github.com/AnnaTykhomyrova/point-of-sales-terminal/blob/master/docs/pos-terminal-with-over-and-below-credit-limit.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Point of Sales Terminal. Responsive design.
+!["Screenshot of responsive pos terminal."](https://github.com/AnnaTykhomyrova/point-of-sales-terminal/blob/master/docs/pos-terminal-responsive.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Tech Stack
+- Express
+- Node
+- PostgreSQL
+- Knex
+- React
+- Bootstrap

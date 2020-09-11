@@ -6,6 +6,9 @@ exports.up = function(knex) {
           table.string('name');          
           table.integer('price');
           table.integer('qty');          
+          table.text('order_id');  
+          table.text('total_price');
+          table.text('credit_limit');
         })
     ]);
   };
